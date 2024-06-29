@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Welcome to our survey forum</h1>
+        <p id="description">Please feel free to give your honest opinion</p>
+     
+        <form id="survey-form" action="https://www.submit-nowhere.com" method="post">
+            <fieldset>
+            <label for="name" id="name-label">Name <input type="text" placeholder="Enter your name" id="name" required></label>
+            <label for="email" id="email-label">Email <input type="email" placeholder="Enter youe Email" id="email" required></label>
+            <label for="number" id="number-label">Age <input type="number" placeholder="Age" id="number" min="10" max="13"></label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Select your favourite store</legend>
+                <select id="dropdown">
+                    <option>Ebay</option>
+                    <option>Amazon</option>
+                    <option>Alibaba</option>
+                    <option>Jumia</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Do you enjoy online shopping?</legend>
+                <label><input name="shopping" type="radio" class="inline"> Yes</label>
+                <label><input name="shopping" type="radio" class="inline"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>What item do you purchase most</legend>
+                <label for="clothes"><input value="1" type="checkbox" id="clothes" class="inline"> Clothes</label>
+                <label for="electronics"><input value="2" type="checkbox" id="electronics" class="inline"> Electronics</label>
+                <label for="shoes"><input value="3" type="checkbox" id="shoes" class="inline"> Shoes</label>
+                <label for="funiture"><input value="4" type="checkbox" id="funiture" class="inline"> Funiture</label>
+            </fieldset>
+            <label for="comments">Comments
+                <textarea id="comments" type="text" placeholder="Comments"></textarea>
+            </label>
+            <input type="submit" id="submit">
+
+        </form>
+    </body>
+</html>
